@@ -75,6 +75,7 @@ h3 {
   .container1 {
     display: grid;
     justify-items: center;
+    grid-gap: 20px;
   }
   html {
     font-size: 10px;
