@@ -22,9 +22,9 @@ function diceGame() {
     if (player1 === player2) {
       document.querySelector("h1").innerHTML = "Try again!";
     } else if (player1 > player2) {
-      document.querySelector("h1").innerHTML = `${name1} победил!`;
+      document.querySelector("h1").innerHTML = `${name1} победитель!`;
     } else if (player1 < player2) {
-      document.querySelector("h1").innerHTML = `${name2} победил!`;
+      document.querySelector("h1").innerHTML = `${name2} победитель!`;
     }
   }
 
