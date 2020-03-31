@@ -1,6 +1,8 @@
 "use strict";
 let name1 = prompt("Player 1 name");
 let name2 = prompt("Player 2 name");
+let ch1 = (document.querySelectorAll("p")[0].innerText = `${name1}`);
+let ch2 = (document.querySelectorAll("p")[1].innerText = `${name2}`);
 function diceGame() {
   let player1 = getRandom();
   let player2 = getRandom();
