@@ -1,5 +1,6 @@
 "use strict";
-
+let name1 = prompt("Player 1 name");
+let name2 = prompt("Player 2 name");
 function diceGame() {
   let player1 = getRandom();
   let player2 = getRandom();
@@ -12,11 +13,15 @@ function diceGame() {
 
   function winner() {
     if (player1 === player2) {
-      document.querySelector("h1").innerText = "Try again";
+      document.querySelector("h1").innerHTML = "NO <span>🐱‍👤</span>‍ BODY";
     } else if (player1 > player2) {
-        document.querySelector("h1").innerHTML = "<span style='color:red'>❤ </span> Player 1 won";
+      document.querySelector(
+        "h1"
+      ).innerHTML = `<span>🐱‍👤</span>‍ ${name1} won!`;
     } else if (player1 < player2) {
-        document.querySelector("h1").innerHTML = "Player 2 won <span style='color:red'>❤ </span>";
+      document.querySelector(
+        "h1"
+      ).innerHTML = `${name2} won! <span>🐱‍👤</span>‍`;
     }
   }
 
