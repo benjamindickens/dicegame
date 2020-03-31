@@ -1,6 +1,11 @@
 "use strict";
 let name1 = prompt("Player 1 name");
+name1 =
+  name1.slice(0, 1).toUpperCase() + name1.slice(1, name1.length).toLowerCase();
+
 let name2 = prompt("Player 2 name");
+name2 =
+  name2.slice(0, 1).toUpperCase() + name2.slice(1, name2.length).toLowerCase();
 let ch1 = (document.querySelectorAll("p")[0].innerText = `${name1}`);
 let ch2 = (document.querySelectorAll("p")[1].innerText = `${name2}`);
 function diceGame() {
@@ -15,15 +20,11 @@ function diceGame() {
 
   function winner() {
     if (player1 === player2) {
-      document.querySelector("h1").innerHTML = "NO <span>🐱‍👤</span>‍ BODY";
+      document.querySelector("h1").innerHTML = "Try again!";
     } else if (player1 > player2) {
-      document.querySelector(
-        "h1"
-      ).innerHTML = `<span>🐱‍👤</span>‍ ${name1} won!`;
+      document.querySelector("h1").innerHTML = `${name1} won!`;
     } else if (player1 < player2) {
-      document.querySelector(
-        "h1"
-      ).innerHTML = `${name2} won! <span>🐱‍👤</span>‍`;
+      document.querySelector("h1").innerHTML = `${name2} won!`;
     }
   }
 
