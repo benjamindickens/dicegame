@@ -1,4 +1,5 @@
 "use strict";
+
 let name1 = prompt("Player 1 name");
 name1 =
   name1.slice(0, 1).toUpperCase() + name1.slice(1, name1.length).toLowerCase();

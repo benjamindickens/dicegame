@@ -36,7 +36,11 @@ img {
 
 footer {
   color: #eeeeee;
+  height: 10vh;
   text-align: center;
+  align-items: end;
+  display: grid;
+  justify-items: center;
 }
 
 .flag-left {
@@ -61,17 +65,17 @@ footer {
   font-size: 3rem;
   text-transform: uppercase;
 }
-footer {
-  width: 100%;
-  text-align: center;
-  display: grid;
-  justify-items: center;
-}
+
 h3 {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 600px) {
+  .wrapper {
+    display: grid;
+    height: 100vh;
+    align-items: center;
+  }
   .container1 {
     display: grid;
     justify-items: center;
@@ -79,7 +83,7 @@ h3 {
     height: 70vh;
   }
   .btn-container {
-    height: 23vh;
+    height: 15vh;
   }
   html {
     font-size: 10px;
@@ -93,5 +97,17 @@ h3 {
   h1 {
     margin: 20px auto;
     font-size: 4.5rem;
+  }
+  footer {
+    height: 5vh;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  img {
+    max-width: 30%;
   }
 }

@@ -17,31 +17,33 @@
     />
   </head>
   <body>
-    <div class="container1">
-      <h1>Refresh Me</h1>
+    <div class="wrapper">
+      <div class="container1">
+        <h1>Refresh Me</h1>
 
-      <div class="dice">
-        <p>Player 1</p>
-        <img class="img1" src="./images/dice6.png" />
-      </div>
+        <div class="dice">
+          <p>Player 1</p>
+          <img class="img1" src="./images/dice6.png" />
+        </div>
 
-      <div class="dice">
-        <p>Player 2</p>
-        <img class="img2" src="./images/dice6.png" />
+        <div class="dice">
+          <p>Player 2</p>
+          <img class="img2" src="./images/dice6.png" />
+        </div>
       </div>
+      <div class="btn-container">
+        <input
+          class="btn-main btn btn-lg btn-light"
+          type="button"
+          value="Start"
+          name="StartGame"
+          OnClick="diceGame();"
+        />
+      </div>
+      <footer>
+        <h3>&copy; 31.03.2020 Ben Dickens</h3>
+      </footer>
     </div>
-    <div class="btn-container">
-      <input
-        class="btn-main btn btn-lg btn-light"
-        type="button"
-        value="Start"
-        name="StartGame"
-        OnClick="diceGame();"
-      />
-    </div>
-    <footer>
-      <h3>&copy; 31.03.2020 Ben Dickens</h3>
-    </footer>
   </body>
 
   <script src="index.js"></script>
