@@ -35,7 +35,6 @@ img {
 }
 
 footer {
-  margin-top: 5%;
   color: #eeeeee;
   text-align: center;
 }
@@ -80,7 +79,7 @@ h3 {
     height: 70vh;
   }
   .btn-container {
-    height: 15vh;
+    height: 23vh;
   }
   html {
     font-size: 10px;
