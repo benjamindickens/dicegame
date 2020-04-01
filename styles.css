@@ -2,7 +2,6 @@
   width: 70%;
   margin: auto;
   text-align: center;
-  
 }
 
 .dice {
@@ -11,7 +10,9 @@
 }
 
 body {
-  background-color: #393e46;
+  /* background-color: #393e46; */
+  background-color: #222831;
+  color: #eeeeee;
 }
 
 h1 {
@@ -19,12 +20,12 @@ h1 {
   font-family: "Lobster", cursive;
   text-shadow: 5px 0 #232931;
   font-size: 6.5rem;
-  color: #4ecca3;
+  /* color: #4ecca3; */
 }
 
 p {
   font-size: 2rem;
-  color: #4ecca3;
+  /* color: #4ecca3; */
   font-family: "Indie Flower", cursive;
 }
 
@@ -77,6 +78,10 @@ h3 {
     justify-items: center;
     grid-gap: 20px;
     height: 70vh;
+  }
+  .btn-container {
+    height: 20vh;
+    
   }
   html {
     font-size: 10px;
