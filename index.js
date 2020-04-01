@@ -1,10 +1,17 @@
 "use strict";
 
 let name1 = prompt("Player 1 name");
+if (name1 === null) {
+  name1 = "Ты";
+}
+
 name1 =
   name1.slice(0, 1).toUpperCase() + name1.slice(1, name1.length).toLowerCase();
 
 let name2 = prompt("Player 2 name");
+if (name2 === null) {
+  name2 = "коронавирус";
+}
 name2 =
   name2.slice(0, 1).toUpperCase() + name2.slice(1, name2.length).toLowerCase();
 let ch1 = (document.querySelectorAll("p")[0].innerText = `${name1}`);
