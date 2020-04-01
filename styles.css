@@ -2,7 +2,6 @@
   max-width: 70%;
   margin: auto;
   text-align: center;
-  height: 60vh;
 }
 
 .dice {
@@ -20,7 +19,7 @@ h1 {
   margin: 30px;
   font-family: "Lobster", cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 6.5rem;
+  font-size: 5.5rem;
   /* color: #4ecca3; */
 }
 
@@ -36,7 +35,6 @@ img {
 
 footer {
   color: #eeeeee;
-  height: 10vh;
   text-align: center;
   align-items: end;
   display: grid;
@@ -59,7 +57,6 @@ footer {
   align-items: center;
   justify-items: center;
   grid-gap: 40px;
-  height: 20vh;
 }
 .btn-main {
   font-size: 3rem;
