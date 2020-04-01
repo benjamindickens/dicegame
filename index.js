@@ -20,7 +20,7 @@ function diceGame() {
 
   function winner() {
     if (player1 === player2) {
-      document.querySelector("h1").innerHTML = "Никто<br> не победил  !";
+      document.querySelector("h1").innerHTML = "Никто не победил  !";
     } else if (player1 > player2) {
       document.querySelector("h1").innerHTML = `${name1} победитель!`;
     } else if (player1 < player2) {
