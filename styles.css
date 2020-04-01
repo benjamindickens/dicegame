@@ -1,8 +1,8 @@
 .container1 {
-  width: 70%;
+  max-width: 70%;
   margin: auto;
   text-align: center;
-  height: 70vh;
+  height: 60vh;
 }
 
 .dice {
@@ -81,7 +81,6 @@ h3 {
   }
   .btn-container {
     height: 20vh;
-    
   }
   html {
     font-size: 10px;
