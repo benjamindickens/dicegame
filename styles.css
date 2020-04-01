@@ -52,16 +52,19 @@ footer {
 }
 
 .btn-container {
+  padding: 20px;
   display: grid;
-  padding: 40px;
   align-items: center;
   justify-items: center;
-  grid-gap: 40px;
+  grid-gap: 15px;
 }
 .btn-main {
   font-weight: 500;
   font-size: 3rem;
   text-transform: uppercase;
+}
+.btn-ref {
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -77,10 +80,10 @@ h3 {
   .container1 {
     display: grid;
     justify-items: center;
-    grid-gap: 20px;
     height: 70vh;
   }
   .btn-container {
+    padding: 0;
     height: 15vh;
   }
   html {
@@ -107,5 +110,8 @@ h3 {
 @media only screen and (max-width: 350px) {
   img {
     max-width: 30%;
+  }
+  html {
+    font-size: 8px;
   }
 }
