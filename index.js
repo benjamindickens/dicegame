@@ -1,6 +1,6 @@
 "use strict";
 
-let name1 = prompt("Player 1 name");
+let name1 = prompt("Player 1 name", "Ты");
 if (name1 === null) {
   name1 = "Ты";
 }
@@ -8,7 +8,7 @@ if (name1 === null) {
 name1 =
   name1.slice(0, 1).toUpperCase() + name1.slice(1, name1.length).toLowerCase();
 
-let name2 = prompt("Player 2 name");
+let name2 = prompt("Player 2 name", "Коронавирус");
 if (name2 === null) {
   name2 = "коронавирус";
 }
@@ -27,12 +27,25 @@ function diceGame() {
   console.log(player2);
 
   function winner() {
-    if (player1 === player2) {
-      document.querySelector("h1").innerHTML = "Никто не победил  !";
-    } else if (player1 > player2) {
-      document.querySelector("h1").innerHTML = `${name1} победитель!`;
-    } else if (player1 < player2) {
-      document.querySelector("h1").innerHTML = `${name2} победитель!`;
+    if (
+      document.querySelectorAll("p")[0].innerHTML === "Ты" &&
+      document.querySelectorAll("p")[1].innerHTML === "Коронавирус"
+    ) {
+      if (player1 === player2) {
+        document.querySelector("h1").innerHTML = "50 на 50...";
+      } else if (player1 > player2) {
+        document.querySelector("h1").innerHTML = `Ты победил!`;
+      } else if (player1 < player2) {
+        document.querySelector("h1").innerHTML = `Потрачено!`;
+      }
+    } else {
+      if (player1 === player2) {
+        document.querySelector("h1").innerHTML = "Никто не победил  !";
+      } else if (player1 > player2) {
+        document.querySelector("h1").innerHTML = `${name1} победитель!`;
+      } else if (player1 < player2) {
+        document.querySelector("h1").innerHTML = `${name2} победитель!`;
+      }
     }
   }
 
